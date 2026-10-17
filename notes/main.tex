@@ -1,0 +1,54 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{hyperref}
+\usepackage{xcolor}
+
+% Problems (numbered within each subsection)
+\newcounter{problem}[subsection]
+\renewcommand{\theproblem}{\thesubsection.\arabic{problem}}
+\newcommand{\problem}[1]{%
+  \refstepcounter{problem}%
+  \par\noindent\textcolor{red}{\textbf{Problem \theproblem.}}\;#1\par
+}
+
+\newcommand{\vs}{
+    \vspace{1em}
+}
+
+\newcommand{\vsn}[1]{
+    \vspace{#1}
+}
+\title{High Performance Computing Notes}
+\author{Kaustubh Singh}
+
+% Make plans to port all this to a local platform.
+% Github would serve well. 
+% Check how to link this project to GitHub, 
+% That way you can work locally, on Overleaf and sync changes via GitHub.
+
+\begin{document}
+
+\maketitle
+
+\begin{center}
+    As I write this, I have a solid background in the fundamentals of physics at the graduate level, but not so much in computing. I have taken some courses in scientific computing, which I found interesting and wanted to explore further, hence this endeavour. I am well-versed in Python, having created a library for hybrid tensor networks, but am new to principles of computing and compiled languages. 
+
+    \vs 
+    
+    These notes will serve as reference for all that I learn as I teach myself high performance computing. I hope to sniff several rabbit holes, if not dive into them, as I begin learning C, a language closer to the hardware than Python. I will not shy away from being verbose. The language is meant to serve as a stepping stone as I muck around the muddy ponds of low-level, performant and parallel classical computing. To that end, I might pick up some different languages, but that will be way down the line. 
+\end{center}
+
+\section{Data types}
+\subsection{Floating point arithmetic}
+A succinct \href{https://www.phys.uconn.edu/~rozman/Courses/P2200_15F/downloads/floating-point-guide-2015-10-1}{article on floating point arithmetic}.
+
+\vs 
+
+\problem{Write a C program that outputs the bit sequence of a given data type. For instance, for float, you should show the signed bit, the exponent bits, the significand/ mantissa bits. Bonus points for nice formatting.}
+
+\vs
+
+
+
+
+\end{document}
