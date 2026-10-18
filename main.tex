@@ -2,6 +2,8 @@
 \usepackage{graphicx} % Required for inserting images
 \usepackage{hyperref}
 \usepackage{xcolor}
+\usepackage[backend=biber,style=alphabetic]{biblatex}
+\addbibresource{references.bib}
 
 % Problems (numbered within each subsection)
 \newcounter{problem}[subsection]
@@ -38,9 +40,13 @@
     These notes will serve as reference for all that I learn as I teach myself high performance computing. I hope to sniff several rabbit holes, if not dive into them, as I begin learning C, a language closer to the hardware than Python. I will not shy away from being verbose. The language is meant to serve as a stepping stone as I muck around the muddy ponds of low-level, performant and parallel classical computing. To that end, I might pick up some different languages, but that will be way down the line. 
 \end{center}
 
+\section{Computer Architecture}
+My primary references for this section would be the first chapter of \href{https://www.cs.sfu.ca/~ashriram/Courses/CS295/assets/books/CSAPP_2016.pdf}{CSAPP}~\cite{csapp}. 
+
+
 \section{Data types}
 \subsection{Floating point arithmetic}
-A succinct \href{https://www.phys.uconn.edu/~rozman/Courses/P2200_15F/downloads/floating-point-guide-2015-10-1}{article on floating point arithmetic}.
+A succinct \href{https://www.phys.uconn.edu/~rozman/Courses/P2200_15F/downloads/floating-point-guide-2015-10-15.pdf}{article on floating point arithmetic}.
 
 \vs 
 
@@ -50,5 +56,7 @@ A succinct \href{https://www.phys.uconn.edu/~rozman/Courses/P2200_15F/downloads/
 
 
 
+\vs
+\printbibliography
 
 \end{document}
